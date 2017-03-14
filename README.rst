@@ -2,8 +2,9 @@ Install Latest Python on CentOS 7
 =================================
 
 This repo accompanies the blog post
-`Install Latest Python on CentOS 7 <http://www.codeghar.com/blog/install-latest-python-on-centos-7.html>`_. While the blog details manual
-steps this repo is more a clone-and-play type of deal.
+`Install Latest Python on CentOS 7 <http://www.codeghar.com/blog/install-latest-python-on-centos-7.html>`_.
+While the blog details manual steps this repo is more a clone-and-play type of
+deal.
 
 How?
 ----
@@ -12,7 +13,7 @@ Install `Vagrant <https://www.vagrantup.com/>`_,
 `VirtualBox <https://www.virtualbox.org/>`_, and
 `Ansible <https://pypi.python.org/pypi/ansible>`_.
 
-Clone this repo. Optionally, edit *Vagrantfile* or *playbook.yaml* to fit your
+Clone this repo. Optionally, edit *Vagrantfile* or *playbook.yml* to fit your
 requirements. Run Vagrant.
 
 ::

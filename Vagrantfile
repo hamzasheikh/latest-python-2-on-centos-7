@@ -44,7 +44,7 @@ Vagrant.configure(2) do |config|
 
     centos.vm.provision "ansible" do |ansible|
       ansible.verbose = "v"
-      ansible.playbook = "playbook.yaml"
+      ansible.playbook = "playbook.yml"
     end
   end
 end
