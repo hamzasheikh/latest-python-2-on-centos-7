@@ -83,14 +83,14 @@ def install_build_dep(srpm_path):
 
 
 @task
-def clean():
+def clean(ctx):
     path = os.path.expanduser(os.path.join('~', 'rpmbuild'))
     print("Remove dir {0}".format(path))
     shutil.rmtree(path, ignore_errors=True)
 
 
 @task
-def setup():
+def setup(ctx):
     create_dirs()
     name, url = new_python_build()
     name, url = new_python_srpm(name, url)
@@ -99,7 +99,7 @@ def setup():
 
 
 @task
-def build(runtests=False):
+def build(ctx, runtests=False):
     paths = glob.glob(os.path.expanduser(os.path.join('~', 'rpmbuild', "SRPMS", "*.src.rpm")))
     last_pkg = None
     for path in paths:
